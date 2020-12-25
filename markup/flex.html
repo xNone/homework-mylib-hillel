@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MYLIB | Flex</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <h2><a href="index.html">MYLIB</a></h2>
+        </div>
+        <nav class="header-menu">
+          <ul>
+            <li><a href="elements.html">elements</a></li>
+            <li><a href="components.html">components</a></li>
+            <li class="active">flex</li>
+            <li><a href="#">layouts</a></li>
+            <li><a href="#">drafts</a></li>
+            <li><a href="#">documentation</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="case">
+        <aside class="sidebar">
+          <nav class="sidebar-menu">
+            <ul>
+              <li><a href="#justify-content">justify-content</a></li>
+              <li><a href="#order">order</a></li>
+              <li><a href="#align-items">align-items</a></li>
+              <li><a href="#align-content">align-content</a></li>
+              <li><a href="#flex-wrap">flex-wrap</a></li>
+              <li><a href="#flex-direction">flex-direction</a></li>
+              <li><a href="#flex-grow">flex-grow</a></li>
+              <li><a href="#flex-basis">flex-basis</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <main class="main-box">
+          <div class="chevron-menu">
+            <h2 class="title-h2">Flexbox CSS</h2>
+            <div class="info-container">
+              <div class="block-text block-info">
+                <div class="info-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path fill="#FFC806" fill-rule="evenodd" d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11zm1 0c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zM9.259 15.433c-.075.338-.113.584-.113.74 0 .445.138.776.413.995.281.212.597.318.947.318.618 0 1.2-.262 1.743-.787.332-.319.81-.938 1.435-1.857l-.422-.271c-.219.362-.472.709-.76 1.04-.287.332-.528.497-.721.497-.075 0-.144-.019-.207-.056-.062-.044-.093-.134-.093-.272 0-.137.056-.438.168-.9.044-.181.129-.506.254-.975l1.49-5.466-.825.16c-.287.056-.778.125-1.472.206-.687.075-1.212.125-1.575.15v.506c.431.019.728.06.89.122.163.063.245.222.245.478 0 .044-.007.09-.02.14-.005.05-.015.1-.027.15l-1.153 4.313c-.088.32-.154.575-.197.77zm4.51-10.903c-.25-.25-.554-.375-.91-.375-.357 0-.663.125-.919.375-.25.25-.375.553-.375.91 0 .356.125.662.375.918.256.25.563.375.919.375.356 0 .66-.125.91-.375.25-.256.374-.562.374-.919 0-.356-.125-.659-.375-.909z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <pre><p>Better than something old.
+Hover over the text to see the content.</p></pre>
+              </div>
+              <!-- justify-content -->
+              <h3 class="title-h3" id="justify-content">justify-content</h3>
+              <fieldset class="fieldset-code">
+                <legend>justify-content</legend>
+                <div class="block-text block-code block-dropdown">
+                  <div class="dropdown">
+                    <div class="view-hover hover-text"><span>flex-start</span></div>
+                    <div class="view-dropdown-content justify-content-flex-start">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>justify-content: flex-start;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>flex-end</span></div>
+                    <div class="dropdown-content justify-content-flex-end">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>justify-content: flex-end;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>center</span></div>
+                    <div class="dropdown-content justify-content-center">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>justify-content: center;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>space-around</span></div>
+                    <div class="dropdown-content justify-content-space-around">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>justify-content: space-around;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>space-between</span></div>
+                    <div class="dropdown-content justify-content-space-between">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>justify-content: space-between;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>space-evenly</span></div>
+                    <div class="dropdown-content justify-content-space-evenly">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>justify-content: space-evenly;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+              </fieldset>
+              <!-- order -->
+              <h3 class="title-h3" id="order">order</h3>
+              <fieldset class="fieldset-code">
+                <legend>order</legend>
+                <div class="block-text block-code block-dropdown">
+                  <div class="dropdown">
+                    <div class="view-hover hover-text"><span>-1</span></div>
+                    <div class="view-dropdown-content">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+&#125;
+.order-block &#123;
+  <span>order: -1;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content order-example-first">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>0</span></div>
+                    <div class="dropdown-content">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+&#125;
+.order-block &#123;
+  <span>order: 0;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content order-example-second">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>1</span></div>
+                    <div class="dropdown-content">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+&#125;
+.order-block &#123;
+  <span>order: 1;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content order-example-third">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+              </fieldset>
+              <!-- align-items -->
+              <h3 class="title-h3" id="align-items">align-items</h3>
+              <fieldset class="fieldset-code">
+                <legend>align-items</legend>
+                <div class="block-text block-code block-dropdown">
+                  <div class="dropdown">
+                    <div class="view-hover hover-text"><span>flex-start</span></div>
+                    <div class="view-dropdown-content align-items-flex-start">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>align-items: flex-start;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>flex-end</span></div>
+                    <div class="dropdown-content align-items-flex-end">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>align-items: flex-end;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>center</span></div>
+                    <div class="dropdown-content align-items-center">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>align-items: center;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>baseline</span></div>
+                    <div class="dropdown-content align-items-baseline">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>align-items: baseline;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+              </fieldset>
+              <!-- align-content -->
+              <h3 class="title-h3" id="align-content">align-content</h3>
+              <fieldset class="fieldset-code">
+                <legend>align-content</legend>
+                <div class="block-text block-code block-dropdown align-content">
+                  <div class="dropdown">
+                    <div class="view-hover hover-text"><span>flex-start</span></div>
+                    <div class="view-dropdown-content align-content-flex-start">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  flex-wrap: wrap;
+  <span>align-content: flex-start;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>flex-end</span></div>
+                    <div class="dropdown-content align-content-flex-end">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  flex-wrap: wrap;
+  <span>align-content: flex-end;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>center</span></div>
+                    <div class="dropdown-content align-content-center">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  flex-wrap: wrap;
+  <span>align-content: center;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>space-between</span></div>
+                    <div class="dropdown-content align-content-space-between">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  flex-wrap: wrap;
+  <span>align-content: space-between;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>space-around</span></div>
+                    <div class="dropdown-content align-content-space-around">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  flex-wrap: wrap;
+  <span>align-content: space-around;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>space-evenly</span></div>
+                    <div class="dropdown-content align-content-space-evenly">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  flex-wrap: wrap;
+  <span>align-content: space-evenly;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+              </fieldset>
+              <!-- flex-wrap -->
+              <h3 class="title-h3" id="flex-wrap">flex-wrap</h3>
+              <fieldset class="fieldset-code">
+                <legend>flex-wrap</legend>
+                <div class="block-text block-code block-dropdown flex-wrap">
+                  <div class="dropdown">
+                    <div class="view-hover hover-text"><span>nowrap</span></div>
+                    <div class="view-dropdown-content">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>flex-wrap: nowrap;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>wrap</span></div>
+                    <div class="dropdown-content flex-wrap-wrap">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>flex-wrap: wrap;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>wrap-reverse</span></div>
+                    <div class="dropdown-content flex-wrap-wrap-reverse">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>flex-wrap: wrap-reverse;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+              </fieldset>
+              <!-- flex-direction -->
+              <h3 class="title-h3" id="flex-direction">flex-direction</h3>
+              <fieldset class="fieldset-code">
+                <legend>flex-direction</legend>
+                <div class="block-text block-code block-dropdown">
+                  <div class="dropdown">
+                    <div class="view-hover hover-text"><span>row</span></div>
+                    <div class="view-dropdown-content">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>flex-direction: row;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>row-reverse</span></div>
+                    <div class="dropdown-content flex-direction-row-reverse">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>flex-direction: row-reverse;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>column</span></div>
+                    <div class="dropdown-content flex-direction-column">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>flex-direction: column;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>column-reverse</span></div>
+                    <div class="dropdown-content flex-direction-column-reverse">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+  <span>flex-direction: column-reverse;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+              </fieldset>
+              <!-- flex-grow -->
+              <h3 class="title-h3" id="flex-grow">flex-grow</h3>
+              <fieldset class="fieldset-code">
+                <legend>flex-grow</legend>
+                <div class="block-text block-code block-dropdown">
+                  <div class="dropdown">
+                    <div class="view-hover hover-text"><span>0</span></div>
+                    <div class="view-dropdown-content">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+&#125;
+.flex-grow-block &#123;
+  <span>flex-grow: 0;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content flex-grow-example-first">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>1</span></div>
+                    <div class="dropdown-content">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+&#125;
+.flex-grow-block &#123;
+  <span>flex-grow: 1;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content flex-grow-example-second">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+              </fieldset>
+              <!-- flex-basis -->
+              <h3 class="title-h3" id="flex-basis">flex-basis</h3>
+              <fieldset class="fieldset-code">
+                <legend>flex-basis</legend>
+                <div class="block-text block-code block-dropdown">
+                  <div class="dropdown">
+                    <div class="view-hover hover-text"><span>40%</span></div>
+                    <div class="view-dropdown-content">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+&#125;
+.flex-basis-block &#123;
+  <span>flex-basis: 40%;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content flex-basis-example-first">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>60%</span></div>
+                    <div class="dropdown-content ttt">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+&#125;
+.flex-basis-block &#123;
+  <span>flex-basis: 60%;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content flex-basis-example-second">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <div class="hover-text"><span>content</span></div>
+                    <div class="dropdown-content ttt">
+                      <div class="code-content">
+                        <pre><p>.block &#123;
+  display: flex;
+&#125;
+.flex-basis-block &#123;
+  <span>flex-basis: content;</span>
+&#125;</p></pre>
+                      </div>
+                      <div class="block-content">
+                        <p>1</p>
+                      </div>
+                      <div class="block-content flex-basis-example-third">
+                        <p>2</p>
+                      </div>
+                      <div class="block-content">
+                        <p>3</p>
+                      </div>
+                      <div class="block-content">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+              </fieldset>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

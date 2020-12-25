@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MYLIB | Components</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <h2><a href="index.html">MYLIB</a></h2>
+        </div>
+        <nav class="header-menu">
+          <ul>
+            <li><a href="elements.html">elements</a></li>
+            <li class="active">components</li>
+            <li><a href="flex.html">flex</a></li>
+            <li><a href="#">layouts</a></li>
+            <li><a href="#">drafts</a></li>
+            <li><a href="#">documentation</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="case">
+        <aside class="sidebar">
+          <nav class="sidebar-menu">
+            <ul>
+              <li><a href="#chevron-menu">chevron menu</a></li>
+              <li><a href="#">dropdown menu</a></li>
+              <li><a href="#">modal box</a></li>
+              <li><a href="#">allerts</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <main class="main-box">
+          <div class="chevron-menu" id="chevron-menu">
+            <h2 class="title-h2">Chevron menu</h2>
+            <div class="info-container">
+              <div class="block-text block-info">
+                <div class="info-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path fill="#FFC806" fill-rule="evenodd" d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11zm1 0c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zM9.259 15.433c-.075.338-.113.584-.113.74 0 .445.138.776.413.995.281.212.597.318.947.318.618 0 1.2-.262 1.743-.787.332-.319.81-.938 1.435-1.857l-.422-.271c-.219.362-.472.709-.76 1.04-.287.332-.528.497-.721.497-.075 0-.144-.019-.207-.056-.062-.044-.093-.134-.093-.272 0-.137.056-.438.168-.9.044-.181.129-.506.254-.975l1.49-5.466-.825.16c-.287.056-.778.125-1.472.206-.687.075-1.212.125-1.575.15v.506c.431.019.728.06.89.122.163.063.245.222.245.478 0 .044-.007.09-.02.14-.005.05-.015.1-.027.15l-1.153 4.313c-.088.32-.154.575-.197.77zm4.51-10.903c-.25-.25-.554-.375-.91-.375-.357 0-.663.125-.919.375-.25.25-.375.553-.375.91 0 .356.125.662.375.918.256.25.563.375.919.375.356 0 .66-.125.91-.375.25-.256.374-.562.374-.919 0-.356-.125-.659-.375-.909z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <pre><p>Possible to use on gradient background
+Easy to use opacity for items background
+Cross-browser</p></pre>
+              </div>
+              <nav class="chevron-menu-example">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="#">about</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">careers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">faq</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <fieldset class="fieldset-code">
+                <legend>HTML</legend>
+                <div class="block-text block-code">
+                  <pre><p>&lt;nav class=&Prime;chevron-menu&Prime;&gt;
+  &lt;ul class=&Prime;nav-list&Prime;&gt;
+    &lt;li class=&Prime;nav-item&Prime;&gt;
+      &lt;a href=&Prime;#&Prime;&gt;about&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&Prime;nav-item&Prime;&gt;
+      &lt;a href=&Prime;#&Prime;&gt;careers&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&Prime;nav-item&Prime;&gt;
+      &lt;a href=&Prime;#&Prime;&gt;faq&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&Prime;nav-item&Prime;&gt;
+      &lt;a href=&Prime;#&Prime;&gt;contact&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</p></pre>
+                </div>
+              </fieldset>
+              <fieldset class="fieldset-code">
+                <legend>CSS</legend>
+                <div class="block-text block-code">
+                  <pre><p>.chevron-menu &#123;
+  padding: 2px 60px;
+&#125;
+.nav-list &#123;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+&#125;
+.nav-item &#123;
+  display: inline-block;
+  vertical-align: top;
+&#125;
+  .chevron-menu a &#123;
+  display: inline-block;
+  background: #fff;
+  font: 32px/37px Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  padding: 30px 25px 29px 25px;
+  position: relative;
+  margin: 0 25px;
+&#125;
+.chevron-menu-example a:after, .nav-item a:before &#123;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 48px 0 48px 25px;
+&#125;
+.chevron-menu a:after &#123;
+  right: -25px;
+  border-color: transparent transparent transparent #fff;
+&#125;
+.nav-item a:before &#123;
+  left: -25px;
+  border-color: #fff transparent #fff transparent;
+&#125;
+.nav-item a:hover &#123;
+  background: #ccc;
+&#125;
+.nav-item a:hover:after &#123;
+  border-color: transparent transparent transparent #ccc;
+&#125;
+.nav-item a:hover:before &#123;
+  border-color: #ccc transparent #ccc transparent;
+&#125;
+.chevron-menu .nav-item a:hover &#123;
+  background: rgba(255, 255, 255, 0.7);
+&#125;
+.chevron-menu .nav-item a:hover:after&#123;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+&#125;
+.chevron-menu .nav-item a:hover:before &#123;
+  border-color: rgba(255, 255, 255, 0.7) transparent rgba(255, 255, 255, 0.7) transparent;
+&#125;
+.chevron-menu &#123;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+&#125;
+</p></pre>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
